@@ -15,7 +15,8 @@ import IUser from "../types/interfaces/IUser";
         default:0
     },
     percent_souccess:{
-        type:Number
+        type:Number,
+        default:0
     }
  })
  
