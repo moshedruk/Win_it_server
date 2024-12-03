@@ -19,6 +19,6 @@ export const login = async(req:Request,res:Response) =>{
             result
         )
     } catch (error) {
-        res.json({msg:"not ok"})
+        res.json({msg:"user not found!"})
     }
 }
