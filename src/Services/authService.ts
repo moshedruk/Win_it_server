@@ -28,7 +28,6 @@ export const loginService = async (user: registerDTO) => {
         }, process.env.SECRET_KEY!)
         return { ...userFromDB, token, password: "****" }
     } catch (error) {
-        console.log(`error in login`)
         console.log(error)
     }
 }
