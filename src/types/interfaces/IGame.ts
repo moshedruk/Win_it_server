@@ -1,7 +1,10 @@
 import IBet from "./IBet"
-import ITeam from "./Iteam"
+import ITeam from "./ITeam"
+ 
+  
 
 export default interface IGame{
+    _id?:string
     teamA:ITeam
     teamB:ITeam
     dateOfGame:Date
@@ -9,4 +12,5 @@ export default interface IGame{
     scoreA:number
     scoreB:number
     bets:IBet[]
+    gamblers?:string[]
 }

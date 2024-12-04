@@ -1,4 +1,4 @@
-export default interface ITeam{
-    name:string
-    icon:string
+export default interface ITeam {
+    teamName: string
+    icon: string
 }

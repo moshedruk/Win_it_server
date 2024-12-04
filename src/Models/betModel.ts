@@ -1,5 +1,6 @@
-import { model, Schema } from "mongoose"
+import mongoose, { model, Schema } from "mongoose"
 import IBet from "../types/interfaces/IBet"
+import gameModel from "./gameModel"
 
 const betSchema = new Schema<IBet>({
     option:{
@@ -9,6 +10,10 @@ const betSchema = new Schema<IBet>({
     value:{
         type:Number,
         required:true
+    },
+    game:{
+        type:mongoose.Schema.ObjectId,
+        ref:'game'
     } 
  })
  

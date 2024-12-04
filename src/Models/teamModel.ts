@@ -1,8 +1,9 @@
 import { model, Schema } from "mongoose"
-import ITeam from "../types/interfaces/Iteam"
+import ITeam from "../types/interfaces/ITeam"
+ 
 
 const teamSchema = new Schema<ITeam>({
-    name:{
+    teamName:{
         type:String,
         required:true
     },
