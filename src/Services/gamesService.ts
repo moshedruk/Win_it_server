@@ -17,7 +17,6 @@ export const addGameService = async (game: IGame) => {
         return await newGame.save()
     } catch (error) {
         console.log(error)
-    }
-    
+    }    
 }
  
